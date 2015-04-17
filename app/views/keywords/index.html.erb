@@ -36,7 +36,7 @@
     <%= link_to 'Editar este artigo', edit_edition_article_path(@article.edition_id, @article), :class => 'btn btn-primary btn-sm btn-block'%>
   </div>
   <div class="col-md-3">
-      <%= link_to 'Remover esta Edição', @article, :class => 'btn btn-danger btn-sm btn-block',  method: :delete, data: { confirm: 'Você tem certeza que deseja remover permanentemente este artigo e todas as palavras-chave e autores a ele vinculados?'} %>
+      <%= link_to 'Remover este Artigo', @article, :class => 'btn btn-danger btn-sm btn-block disabled',  method: :delete, data: { confirm: 'Você tem certeza que deseja remover permanentemente este artigo e todas as palavras-chave e autores a ele vinculados?'} %>
   </div>
   <div class="col-md-3">
     <%= link_to 'Voltar', edition_articles_path(@edition), :class => 'btn btn-default btn-sm' %>  
